@@ -6,6 +6,7 @@ class CPU8080 {
         ~CPU8080();
 
         void emulate(); //Uses the state
+        void execute_instruction();
         void load_rom();
 
     private:

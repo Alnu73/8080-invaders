@@ -21,5 +21,5 @@ typedef struct State8080 {
     uint16_t pc;        //Program counter
     ConditionBits cc;   //Condition code
     uint8_t int_en;     //Interrupt enable
-    uint8_t *memory;
+    uint8_t *memory;    //Might be somewhere else
 } State8080;

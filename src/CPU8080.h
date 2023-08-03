@@ -1,4 +1,5 @@
 #include "state.h"
+#include "Memory.h"
 
 class CPU8080 {
     public:
@@ -11,5 +12,6 @@ class CPU8080 {
     private:
         State8080* state;
         unsigned char* opcode;
-        //Video?
+        Memory* memory;
+        //Video and devices?
 };

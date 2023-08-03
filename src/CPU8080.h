@@ -7,7 +7,6 @@ class CPU8080 {
 
         void emulate(); //Uses the state
         void execute_instruction();
-        void load_rom();
 
     private:
         State8080* state;

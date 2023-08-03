@@ -16,10 +16,6 @@ CPU8080::~CPU8080() {
 
 }
 
-void CPU8080::load_rom() {
-
-}
-
 void CPU8080::execute_instruction() {
 
 }

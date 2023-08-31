@@ -22,6 +22,6 @@ void CPU8080::execute_instruction() {
 }
 
 void CPU8080::emulate() {
-    opcode = memory->memory[state->pc];
+    
 
 }

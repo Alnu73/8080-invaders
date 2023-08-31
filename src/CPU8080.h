@@ -1,5 +1,5 @@
 #include "state.h"
-#include "Memory.h"
+#include "memory.h"
 
 class CPU8080 {
     public:
@@ -7,11 +7,11 @@ class CPU8080 {
         ~CPU8080();
 
         void emulate(); //Uses the state
-        void execute_instruction();
+        void handle_instruction(uint8_t);
+        void handle_interrupt(uint8_t);
 
     private:
         State8080* state;
-        unsigned char* opcode;
         Memory* memory;
         //Video and devices?
 };

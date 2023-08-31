@@ -17,9 +17,11 @@ CPU8080::~CPU8080() {
 
 }
 
-void CPU8080::execute_instruction() {
+void CPU8080::handle_instruction(uint8_t opcode) {
+    
 }
 
 void CPU8080::emulate() {
-    
+    uint8_t opcode = memory->read(state->pc);
+    handle_instruction(opcode);
 }

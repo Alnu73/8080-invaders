@@ -18,10 +18,8 @@ CPU8080::~CPU8080() {
 }
 
 void CPU8080::execute_instruction() {
-
 }
 
 void CPU8080::emulate() {
     
-
 }

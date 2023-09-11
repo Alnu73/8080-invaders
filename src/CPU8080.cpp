@@ -21,7 +21,13 @@ void CPU8080::handle_instruction(uint8_t opcode) {
     
 }
 
+//Add fetch and decode
+uint8_t CPU8080::fetch_instruction() {
+    return memory->read(state->pc);
+}
+
 void CPU8080::emulate() {
-    uint8_t opcode = memory->read(state->pc);
+    uint8_t opcode = fetch_instruction();
+    //Take instruction info
     handle_instruction(opcode);
 }

@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include <string.h>
+#include <string>
 
 #define MEM_SIZE 0x4000
 
